@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // LOCAL MongoDB connection
-mongoose.connect("mongodb://admin:proj123@ac-cql8cab-shard-00-00.un2nl37.mongodb.net:27017,ac-cql8cab-shard-00-01.un2nl37.mongodb.net:27017,ac-cql8cab-shard-00-02.un2nl37.mongodb.net:27017/?ssl=true&replicaSet=atlas-8b8njn-shard-0&authSource=admin&appName=Cluster0")
+mongoose.connect("mongodb://admin:proj123@ac-cql8cab-shard-00-00.un2nl37.mongodb.net:27017,ac-cql8cab-shard-00-01.un2nl37.mongodb.net:27017,ac-cql8cab-shard-00-02.un2nl37.mongodb.net:27017/churnDB?ssl=true&replicaSet=atlas-8b8njn-shard-0&authSource=admin&appName=Cluster0")
   .then(() => console.log("Mongo connected"))
   .catch(err => console.log(err));
 
